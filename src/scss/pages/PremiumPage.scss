@@ -1,0 +1,156 @@
+@import "../styles.scss";
+
+.pageContainer {
+  margin-left: 144px;
+  margin-right: 144px;
+
+  &-loginCard {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin-top: 24px;
+    border-radius: 5px;
+    border: 1.6px solid gray;
+    height: 220px;
+    padding: 24px;
+    @media screen and (max-width: 1120px) {
+      height: 280px;
+    }
+    @media screen and (max-width: 980px) {
+      height: 320px;
+    }
+    @media screen and (max-width: 930px) {
+      height: 500px;
+    }
+    @media screen and (max-width: 890px) {
+      flex-direction: column;
+      height: auto;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+
+      &-image {
+        width: 300px;
+        height: 200px;
+        @media screen and (max-width: 860px) {
+          width: auto;
+          height: auto;
+        }
+      }
+      &-text {
+        font-size: 15px;
+      }
+    }
+  }
+
+  &-cardDiv {
+    margin-top: 39px;
+    padding-bottom: 350px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    @media screen and (max-width: 1240px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-content {
+      padding: 24px;
+      padding-top: 7px;
+      position: relative;
+      &-line {
+        height: 1px;
+        background-color: #a7a7a7;
+        margin-top: 24px;
+        margin-bottom: 24px;
+      }
+      &-h {
+        font-size: 20px;
+        color: $greenColor;
+      }
+      &-c {
+        font-size: 16px;
+        color: #545045;
+      }
+      &-p {
+        font-size: 14px;
+        color: #545045;
+        margin-top: 24px;
+      }
+      &-button {
+        height: 40px;
+        border: 1px solid #1976d2;
+        border-radius: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &-buttonText {
+          font-size: 16px;
+          color: #1976d2;
+        }
+      }
+    }
+
+    &-cardOne {
+      height: 435px;
+      width: 276px;
+      border-radius: 6px;
+      background-color: $greenColor;
+
+      &-card {
+        width: 276px;
+        height: 435px;
+        border-radius: 6px;
+        margin-top: 7px;
+        background-color: #e7ffdb;
+      }
+    }
+    &-cardTwo {
+      height: 435px;
+      width: 276px;
+      border-radius: 6px;
+      background-color: $grayColor;
+
+      &-card {
+        width: 276px;
+        height: 435px;
+        border-radius: 6px;
+        margin-top: 7px;
+        background-color: #ebf5ff;
+      }
+    }
+    &-cardThree {
+      height: 435px;
+      width: 276px;
+      border-radius: 6px;
+      background-color: $purpleColor;
+      &-card {
+        width: 276px;
+        height: 435px;
+        border-radius: 6px;
+        margin-top: 7px;
+        background-color: #ffe9fe;
+      }
+    }
+    &-cardFour {
+      height: 435px;
+      width: 276px;
+      border-radius: 6px;
+      background-color: $redColor;
+
+      &-card {
+        width: 276px;
+        height: 435px;
+        border-radius: 6px;
+        margin-top: 7px;
+        background-color: #ffeee9;
+      }
+    }
+  }
+}
